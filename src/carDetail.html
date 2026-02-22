@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Detail</title>
+    <title>Home Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    
+
+   <header class="container mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+            <div class="bg-black p-2 rounded-lg">
+                <i class="fas fa-car text-white"></i>
+            </div>
+            <span class="font-bold text-xl">Car Rental</span>
+        </div>
+        <nav class="hidden md:flex space-x-8 font-medium">
+            <a href="./homepage.html" class="hover:text-purple-600">Home</a>
+            <a href="#" class="hover:text-purple-600">Vehicles</a>
+            <a href="./carDetail.html" class="hover:text-purple-600 border-b-2 border-purple-600">Details</a>
+            <a href="./aboutUs.html" class="hover:text-purple-600">About Us</a>
+            <a href="./contactUs.html" class="hover:text-purple-600">Contact Us</a>
+        </nav>
+        <div class="flex items-center space-x-3">
+            <div class="bg-purple-100 p-2 rounded-full">
+                <i class="fas fa-phone-alt text-purple-600"></i>
+            </div>
+            <div>
+                <p class="text-xs text-gray-500">Need help?</p>
+                <p class="font-bold text-sm">+996 247-1080</p>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ====== The footer======== -->
+    <footer class="bg-white border-t border-gray-100 pt-16 pb-8">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12 mb-12">
+            <div>
+                <div class="flex items-center space-x-2 mb-6">
+                    <i class="fas fa-car text-xl"></i>
+                    <span class="font-bold text-xl">Car Rental</span>
+                </div>
+                <p class="text-gray-400 text-xs leading-relaxed mb-6">Faucibus faucibus pellentesque dictum turpis. Id pellentesque turpis massa a id iaculis lorem t...</p>
+                <div class="flex space-x-4 text-gray-800">
+                    <i class="fab fa-facebook-f cursor-pointer"></i>
+                    <i class="fab fa-instagram cursor-pointer"></i>
+                    <i class="fab fa-x-twitter cursor-pointer"></i>
+                    <i class="fab fa-youtube cursor-pointer"></i>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 text-sm">Useful links</h4>
+                <ul class="text-gray-500 text-xs space-y-3">
+                    <li>About us</li>
+                    <li>Contact us</li>
+                    <li>Gallery</li>
+                    <li>Blog</li>
+                    <li>F.A.Q</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 text-sm">Vehicles</h4>
+                <ul class="text-gray-500 text-xs space-y-3">
+                    <li>Sedan</li>
+                    <li>Cabriolet</li>
+                    <li>Pickup</li>
+                    <li>Minivan</li>
+                    <li>SUV</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 text-sm">Download App</h4>
+                <div class="space-y-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" class="w-32">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="w-32">
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-[10px] text-gray-400 pt-8 border-t border-gray-50">
+            © Copyright Car Rental 2024. Design by Figma. guru
+        </div>
+    </footer>
+
 </body>
 </html>

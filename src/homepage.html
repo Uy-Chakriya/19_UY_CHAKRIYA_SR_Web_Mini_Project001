@@ -3,10 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="output.css">
+    <title>Car Rental Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <p class="text-blue-900">hellp</p>
+<body class="bg-gray-50 font-sans text-gray-900">
+
+    <header class="flex items-center justify-between px-6 py-4 bg-white shadow-sm lg:px-20">
+        <div class="flex items-center gap-2 font-bold text-xl">
+            <i class="fas fa-car text-indigo-600"></i> CarRental
+        </div>
+        <nav class="hidden md:flex space-x-8 font-medium">
+            <a href="#" class="hover:text-indigo-600">Home</a>
+            <a href="#" class="hover:text-indigo-600">Vehicles</a>
+            <a href="#" class="hover:text-indigo-600">Events</a>
+            <a href="#" class="hover:text-indigo-600">About Us</a>
+            <a href="#" class="hover:text-indigo-600">Contact Us</a>
+        </nav>
+        <div class="hidden lg:block text-sm">
+            <p class="text-gray-500">Need Help?</p>
+            <p class="font-bold">+123 456 7890</p>
+        </div>
+    </header>
+
+    <section class="relative bg-indigo-700 text-white py-16 px-6 lg:px-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+            <div class="lg:w-1/2 z-10">
+                <h1 class="text-4xl lg:text-6xl font-extrabold leading-tight mb-6">
+                    Experience the road like never before
+                </h1>
+                <p class="text-indigo-100 mb-8 text-lg">
+                    Discover the world's best car rental service with thousands of satisfied customers and premium vehicles.
+                </p>
+                <button class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-md font-bold transition">
+                    View More
+                </button>
+            </div>
+
+            <div class="bg-white text-gray-800 p-8 rounded-xl shadow-2xl w-full max-w-md">
+                <h3 class="text-2xl font-bold mb-6">Book your car</h3>
+                <form class="space-y-4">
+                    <select class="w-full border p-3 rounded-md bg-gray-50"><option>Car type</option></select>
+                    <select class="w-full border p-3 rounded-md bg-gray-50"><option>Pick up point</option></select>
+                    <input type="date" class="w-full border p-3 rounded-md bg-gray-50">
+                    <input type="time" class="w-full border p-3 rounded-md bg-gray-50">
+                    <button class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 rounded-md transition mt-4">
+                        Buy now
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="absolute -right-20 bottom-10 opacity-30 pointer-events-none">
+            <img src="https://via.placeholder.com/600x300/4f46e5/ffffff?text=Car+Silhouette" alt="Car BG" class="blur-md">
+        </div>
+    </section>
+
+    <section class="py-16 px-6 max-w-7xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+        <div class="p-6">
+            <div class="text-indigo-600 text-4xl mb-4"><i class="fas fa-map-marker-alt"></i></div>
+            <h4 class="font-bold text-xl mb-2">Availability</h4>
+            <p class="text-gray-500 text-sm">Find car for 24 hours and all around the world fast and easy.</p>
+        </div>
+        <div class="p-6">
+            <div class="text-indigo-600 text-4xl mb-4"><i class="fas fa-car-side"></i></div>
+            <h4 class="font-bold text-xl mb-2">Comfort</h4>
+            <p class="text-gray-500 text-sm">Providing high-end cars for your ultimate comfortable ride.</p>
+        </div>
+        <div class="p-6">
+            <div class="text-indigo-600 text-4xl mb-4"><i class="fas fa-piggy-bank"></i></div>
+            <h4 class="font-bold text-xl mb-2">Savings</h4>
+            <p class="text-gray-500 text-sm">Best rates and discounts for our loyal customers globally.</p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white px-6 lg:px-20">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-10">
+                <h2 class="text-3xl font-bold">Choose the car that <br> suits you</h2>
+                <a href="#" class="text-indigo-600 font-bold">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="border rounded-xl p-6 hover:shadow-lg transition">
+                    <img src="https://via.placeholder.com/300x150?text=Mercedes+Car" alt="Car" class="w-full mb-4">
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <h4 class="font-bold text-lg">Mercedes</h4>
+                            <p class="text-xs text-gray-400">Class A</p>
+                        </div>
+                        <span class="text-indigo-600 font-bold">$25 <span class="text-gray-400 text-sm font-normal">/ day</span></span>
+                    </div>
+                    <div class="flex justify-between text-xs text-gray-500 border-t pt-4 mb-6">
+                        <span><i class="fas fa-cog"></i> Automatic</span>
+                        <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        <span><i class="fas fa-snowflake"></i> AC</span>
+                    </div>
+                    <button class="w-full bg-indigo-600 text-white py-3 rounded-lg font-medium hover:bg-indigo-700 transition">View details</button>
+                </div>
+                
+                <div class="border rounded-xl p-6 hover:shadow-lg transition">
+                    <img src="https://via.placeholder.com/300x150?text=Porsche+Car" alt="Car" class="w-full mb-4">
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <h4 class="font-bold text-lg">Porsche</h4>
+                            <p class="text-xs text-gray-400">911 Carrera</p>
+                        </div>
+                        <span class="text-indigo-600 font-bold">$110 <span class="text-gray-400 text-sm font-normal">/ day</span></span>
+                    </div>
+                    <div class="flex justify-between text-xs text-gray-500 border-t pt-4 mb-6">
+                        <span><i class="fas fa-cog"></i> Automatic</span>
+                        <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        <span><i class="fas fa-snowflake"></i> AC</span>
+                    </div>
+                    <button class="w-full bg-indigo-600 text-white py-3 rounded-lg font-medium hover:bg-indigo-700 transition">View details</button>
+                </div>
+
+                <div class="border rounded-xl p-6 hover:shadow-lg transition">
+                    <img src="https://via.placeholder.com/300x150?text=Toyota+Car" alt="Car" class="w-full mb-4">
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <h4 class="font-bold text-lg">Toyota</h4>
+                            <p class="text-xs text-gray-400">Camry</p>
+                        </div>
+                        <span class="text-indigo-600 font-bold">$30 <span class="text-gray-400 text-sm font-normal">/ day</span></span>
+                    </div>
+                    <div class="flex justify-between text-xs text-gray-500 border-t pt-4 mb-6">
+                        <span><i class="fas fa-cog"></i> Automatic</span>
+                        <span><i class="fas fa-gas-pump"></i> Hybrid</span>
+                        <span><i class="fas fa-snowflake"></i> AC</span>
+                    </div>
+                    <button class="w-full bg-indigo-600 text-white py-3 rounded-lg font-medium hover:bg-indigo-700 transition">View details</button>
+                </div>
+
+                 <div class="border rounded-xl p-6 hover:shadow-lg transition">
+                    <img src="https://via.placeholder.com/300x150?text=Mercedes+Car" alt="Car" class="w-full mb-4">
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <h4 class="font-bold text-lg">Mercedes</h4>
+                            <p class="text-xs text-gray-400">Class A</p>
+                        </div>
+                        <span class="text-indigo-600 font-bold">$25 <span class="text-gray-400 text-sm font-normal">/ day</span></span>
+                    </div>
+                    <div class="flex justify-between text-xs text-gray-500 border-t pt-4 mb-6">
+                        <span><i class="fas fa-cog"></i> Automatic</span>
+                        <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        <span><i class="fas fa-snowflake"></i> AC</span>
+                    </div>
+                    <button class="w-full bg-indigo-600 text-white py-3 rounded-lg font-medium hover:bg-indigo-700 transition">View details</button>
+                </div>
+                
+                <div class="border rounded-xl p-6 hover:shadow-lg transition">
+                    <img src="https://via.placeholder.com/300x150?text=Porsche+Car" alt="Car" class="w-full mb-4">
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <h4 class="font-bold text-lg">Porsche</h4>
+                            <p class="text-xs text-gray-400">911 Carrera</p>
+                        </div>
+                        <span class="text-indigo-600 font-bold">$110 <span class="text-gray-400 text-sm font-normal">/ day</span></span>
+                    </div>
+                    <div class="flex justify-between text-xs text-gray-500 border-t pt-4 mb-6">
+                        <span><i class="fas fa-cog"></i> Automatic</span>
+                        <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        <span><i class="fas fa-snowflake"></i> AC</span>
+                    </div>
+                    <button class="w-full bg-indigo-600 text-white py-3 rounded-lg font-medium hover:bg-indigo-700 transition">View details</button>
+                </div>
+
+                <div class="border rounded-xl p-6 hover:shadow-lg transition">
+                    <img src="https://via.placeholder.com/300x150?text=Toyota+Car" alt="Car" class="w-full mb-4">
+                    <div class="flex justify-between items-center mb-4">
+                        <div>
+                            <h4 class="font-bold text-lg">Toyota</h4>
+                            <p class="text-xs text-gray-400">Camry</p>
+                        </div>
+                        <span class="text-indigo-600 font-bold">$30 <span class="text-gray-400 text-sm font-normal">/ day</span></span>
+                    </div>
+                    <div class="flex justify-between text-xs text-gray-500 border-t pt-4 mb-6">
+                        <span><i class="fas fa-cog"></i> Automatic</span>
+                        <span><i class="fas fa-gas-pump"></i> Hybrid</span>
+                        <span><i class="fas fa-snowflake"></i> AC</span>
+                    </div>
+                    <button class="w-full bg-indigo-600 text-white py-3 rounded-lg font-medium hover:bg-indigo-700 transition">View details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-indigo-700 py-12">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-white/10 p-6 rounded-lg text-center text-white">
+                <div class="text-3xl font-bold">500+</div>
+                <div class="text-sm opacity-80">Cars</div>
+            </div>
+            <div class="bg-white/10 p-6 rounded-lg text-center text-white">
+                <div class="text-3xl font-bold">20k+</div>
+                <div class="text-sm opacity-80">Customers</div>
+            </div>
+            <div class="bg-white/10 p-6 rounded-lg text-center text-white">
+                <div class="text-3xl font-bold">35+</div>
+                <div class="text-sm opacity-80">Years</div>
+            </div>
+            <div class="bg-white/10 p-6 rounded-lg text-center text-white">
+                <div class="text-3xl font-bold">200m+</div>
+                <div class="text-sm opacity-80">Miles</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+            <h2 class="text-4xl font-bold mb-6">Download mobile app</h2>
+            <p class="text-gray-500 mb-8">Get our app for easier booking and exclusive mobile-only deals. Available on iOS and Android.</p>
+            <div class="flex gap-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" class="h-10 cursor-pointer" alt="App Store">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="h-10 cursor-pointer" alt="Google Play">
+            </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+            <div class="relative w-64 h-[450px] bg-gray-900 rounded-[3rem] border-8 border-gray-800 shadow-2xl">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-gray-800 rounded-b-2xl"></div>
+                <div class="p-4 pt-10 text-white text-xs">
+                    <div class="h-4 w-20 bg-gray-700 mb-4 rounded"></div>
+                    <div class="h-32 w-full bg-indigo-600 rounded-lg mb-4"></div>
+                    <div class="space-y-2">
+                        <div class="h-2 w-full bg-gray-700 rounded"></div>
+                        <div class="h-2 w-2/3 bg-gray-700 rounded"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t py-12 px-6 lg:px-20 text-gray-600">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+            <div class="col-span-1">
+                <div class="flex items-center gap-2 font-bold text-xl mb-6 text-gray-900">
+                    <i class="fas fa-car text-indigo-600"></i> CarRental
+                </div>
+                <p class="text-sm mb-6">Premium car rental services providing the best experience for your road trips.</p>
+                <div class="flex gap-4 text-indigo-600">
+                    <i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i> <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-bold text-gray-900 mb-6">Useful Links</h5>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="hover:text-indigo-600">Vehicles</a></li>
+                    <li><a href="#" class="hover:text-indigo-600">Our Services</a></li>
+                    <li><a href="#" class="hover:text-indigo-600">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold text-gray-900 mb-6">Resources</h5>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="hover:text-indigo-600">Blog</a></li>
+                    <li><a href="#" class="hover:text-indigo-600">FAQs</a></li>
+                    <li><a href="#" class="hover:text-indigo-600">Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold text-gray-900 mb-6">Contact</h5>
+                <p class="text-sm mb-2"><i class="fas fa-envelope mr-2"></i> info@carrental.com</p>
+                <p class="text-sm"><i class="fas fa-phone mr-2"></i> +123 456 7890</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

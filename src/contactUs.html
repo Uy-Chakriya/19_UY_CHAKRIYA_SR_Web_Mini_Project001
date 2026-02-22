@@ -3,9 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Car Rental - Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    
+<body class="bg-white text-gray-800 font-sans">
+
+    <header class="container mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+            <div class="bg-black p-2 rounded-lg">
+                <i class="fas fa-car text-white"></i>
+            </div>
+            <span class="font-bold text-xl">Car Rental</span>
+        </div>
+        <nav class="hidden md:flex space-x-8 font-medium">
+            <a href="./homepage.html" class="hover:text-purple-600">Home</a>
+            <a href="#" class="hover:text-purple-600">Vehicles</a>
+            <a href="./carDetail.html" class="hover:text-purple-600 border-b-2 border-purple-600">Details</a>
+            <a href="./aboutUs.html" class="hover:text-purple-600">About Us</a>
+            <a href="./contactUs.html" class="hover:text-purple-600">Contact Us</a>
+        </nav>
+        <div class="flex items-center space-x-3">
+            <div class="bg-purple-100 p-2 rounded-full">
+                <i class="fas fa-phone-alt text-purple-600"></i>
+            </div>
+            <div>
+                <p class="text-xs text-gray-500">Need help?</p>
+                <p class="font-bold text-sm">+996 247-1080</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ====== Section 1====== -->
+    <section class="text-center py-12 bg-gray-50 ">
+        <h1 class="text-4xl font-bold mb-2">Contact Us</h1>
+        <p class="text-gray-500">Home / <span class="text-gray-800">Contact Us</span></p>
+    </section>
+
+<!-- ======>> section 2 <<========= -->
+    <section class="container mx-auto px-6 py-12">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-indigo-600 rounded-3xl p-8 text-white shadow-xl">
+                <h2 class="text-2xl font-bold mb-6 text-center">Book your car</h2>
+                <div class="space-y-4">
+                    <select class="w-full bg-indigo-500 border border-indigo-400 rounded-lg p-3 outline-none">
+                        <option>Car type</option>
+                    </select>
+                    <select class="w-full bg-indigo-500 border border-indigo-400 rounded-lg p-3 outline-none">
+                        <option>Place of rental</option>
+                    </select>
+                    <select class="w-full bg-indigo-500 border border-indigo-400 rounded-lg p-3 outline-none">
+                        <option>Place of return</option>
+                    </select>
+                    <input type="text" placeholder="Rental date" class="w-full bg-indigo-500 border border-indigo-400 rounded-lg p-3 outline-none placeholder-white">
+                    <input type="text" placeholder="Return date" class="w-full bg-indigo-500 border border-indigo-400 rounded-lg p-3 outline-none placeholder-white">
+                    <button class="w-full bg-orange-400 hover:bg-orange-500 text-white font-bold py-3 rounded-lg transition">Book now</button>
+                </div>
+            </div>
+            <div class="md:col-span-2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThg_BahNC4m5SKwgTyu8mS5EsHhdk7XoYGoQ&s" alt="Car" class="w-full h-full object-cover rounded-3xl shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="flex items-center space-x-4">
+                <div class="bg-orange-400 text-white p-4 rounded-full"><i class="fas fa-map-marker-alt"></i></div>
+                <div><h4 class="font-bold">Address</h4><p class="text-sm text-gray-500">Oxford Ave. Cary, NC 27511</p></div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="bg-orange-400 text-white p-4 rounded-full"><i class="fas fa-envelope"></i></div>
+                <div><h4 class="font-bold">Email</h4><p class="text-sm text-gray-500">nwiger@yahoo.com</p></div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="bg-orange-400 text-white p-4 rounded-full"><i class="fas fa-phone"></i></div>
+                <div><h4 class="font-bold">Phone</h4><p class="text-sm text-gray-500">+537 547-6401</p></div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="bg-orange-400 text-white p-4 rounded-full"><i class="fas fa-clock"></i></div>
+                <div><h4 class="font-bold">Opening hours</h4><p class="text-sm text-gray-500">Sun-Mon: 10am - 10pm</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12">Latest blog posts & news</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThg_BahNC4m5SKwgTyu8mS5EsHhdk7XoYGoQ&s" class="rounded-2xl mb-4 w-full h-48 object-cover">
+                <h3 class="font-bold text-lg mb-2">How To Choose The Right Car</h3>
+                <p class="text-xs text-gray-400">News / 12 April 2024</p>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThg_BahNC4m5SKwgTyu8mS5EsHhdk7XoYGoQ&s" class="rounded-2xl mb-4 w-full h-48 object-cover">
+                <h3 class="font-bold text-lg mb-2">Which plan is right for me?</h3>
+                <p class="text-xs text-gray-400">News / 12 April 2024</p>
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThg_BahNC4m5SKwgTyu8mS5EsHhdk7XoYGoQ&s" class="rounded-2xl mb-4 w-full h-48 object-cover">
+                <h3 class="font-bold text-lg mb-2">Enjoy Speed, Choice & Total Control</h3>
+                <p class="text-xs text-gray-400">News / 12 April 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white pt-16 pb-8 border-t border-gray-100">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12 mb-12">
+            <div>
+                <div class="flex items-center space-x-2 mb-6">
+                    <i class="fas fa-car text-xl"></i>
+                    <span class="font-bold text-xl">Car Rental</span>
+                </div>
+                <p class="text-gray-500 text-sm mb-6">Faucibus faucibus pellentesque dictum turpis. Id pellentesque turpis massa a id iaculis lorem.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-black"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-black"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-black"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-black"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6">Useful links</h4>
+                <ul class="text-gray-500 text-sm space-y-3">
+                    <li><a href="#" class="hover:text-black">About us</a></li>
+                    <li><a href="#" class="hover:text-black">Contact us</a></li>
+                    <li><a href="#" class="hover:text-black">Gallery</a></li>
+                    <li><a href="#" class="hover:text-black">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6">Vehicles</h4>
+                <ul class="text-gray-500 text-sm space-y-3">
+                    <li><a href="#" class="hover:text-black">Sedan</a></li>
+                    <li><a href="#" class="hover:text-black">Cabriolet</a></li>
+                    <li><a href="#" class="hover:text-black">Pickup</a></li>
+                    <li><a href="#" class="hover:text-black">SUV</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6">Download App</h4>
+                <div class="space-y-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" class="w-32 cursor-pointer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="w-32 cursor-pointer">
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-100 pt-8 text-center text-xs text-gray-400">
+            © Copyright Car Rental 2024. Design by Figma.guru
+        </div>
+    </footer>
+
 </body>
 </html>
