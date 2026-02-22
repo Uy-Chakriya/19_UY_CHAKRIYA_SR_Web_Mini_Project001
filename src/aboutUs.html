@@ -9,20 +9,28 @@
 </head>
 <body class="bg-white font-sans text-gray-900">
 
-    <header class="flex items-center justify-between px-6 py-4 border-b lg:px-20">
-        <div class="flex items-center gap-2 font-bold text-xl">
-            <i class="fas fa-car text-indigo-600"></i> CarRental
+     <header class="container mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+            <div class="bg-black p-2 rounded-lg">
+                <i class="fas fa-car text-white"></i>
+            </div>
+            <span class="font-bold text-xl">Car Rental</span>
         </div>
-        <nav class="hidden md:flex space-x-8 font-medium text-sm">
-            <a href="./homepage.html" class="hover:text-indigo-600">Home</a>
-            <a href="#" class="hover:text-indigo-600">Vehicles</a>
-            <a href="#" class="hover:text-indigo-600">Events</a>
-            <a href="./aboutUs.html" class="hover:text-indigo-600">About Us</a>
-            <a href="./contactUs.html" class="hover:text-indigo-600">Contact Us</a>
+        <nav class="hidden md:flex space-x-8 font-medium">
+            <a href="./homepage.html" class="hover:text-purple-600">Home</a>
+            <a href="#" class="hover:text-purple-600">Vehicles</a>
+            <a href="./carDetail.html" class="hover:text-purple-600 border-b-2 border-purple-600">Details</a>
+            <a href="./aboutUs.html" class="hover:text-purple-600">About Us</a>
+            <a href="./contactUs.html" class="hover:text-purple-600">Contact Us</a>
         </nav>
-        <div class="hidden lg:block text-right">
-            <p class="text-xs text-gray-500">Need Help?</p>
-            <p class="font-bold text-sm">+123 456 7890</p>
+        <div class="flex items-center space-x-3">
+            <div class="bg-purple-100 p-2 rounded-full">
+                <i class="fas fa-phone-alt text-purple-600"></i>
+            </div>
+            <div>
+                <p class="text-xs text-gray-500">Need help?</p>
+                <p class="font-bold text-sm">+996 247-1080</p>
+            </div>
         </div>
     </header>
 
@@ -181,42 +189,49 @@
         </div>
     </section>
 
-    <footer class="bg-white border-t py-12 px-6 lg:px-20 text-gray-600">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-            <div class="col-span-1">
-                <div class="flex items-center gap-2 font-bold text-xl mb-6 text-gray-900">
-                    <i class="fas fa-car text-indigo-600"></i> CarRental
+   <footer class="bg-white pt-16 pb-8 border-t border-gray-100">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12 mb-12">
+            <div>
+                <div class="flex items-center space-x-2 mb-6">
+                    <i class="fas fa-car text-xl"></i>
+                    <span class="font-bold text-xl">Car Rental</span>
                 </div>
-                <p class="text-sm">Premium car rental services providing the best experience for your journeys.</p>
-                <div class="flex gap-4 mt-6 text-indigo-600">
-                    <i class="fab fa-facebook cursor-pointer"></i> 
-                    <i class="fab fa-instagram cursor-pointer"></i> 
-                    <i class="fab fa-twitter cursor-pointer"></i>
+                <p class="text-gray-500 text-sm mb-6">Faucibus faucibus pellentesque dictum turpis. Id pellentesque turpis massa a id iaculis lorem.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-black"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-black"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-black"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-black"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
             <div>
-                <h5 class="font-bold text-gray-900 mb-6 uppercase text-xs tracking-widest">Company</h5>
-                <ul class="space-y-3 text-sm">
-                    <li><a href="#" class="hover:text-indigo-600">About Us</a></li>
-                    <li><a href="#" class="hover:text-indigo-600">Careers</a></li>
-                    <li><a href="#" class="hover:text-indigo-600">Blog</a></li>
+                <h4 class="font-bold mb-6">Useful links</h4>
+                <ul class="text-gray-500 text-sm space-y-3">
+                    <li><a href="#" class="hover:text-black">About us</a></li>
+                    <li><a href="#" class="hover:text-black">Contact us</a></li>
+                    <li><a href="#" class="hover:text-black">Gallery</a></li>
+                    <li><a href="#" class="hover:text-black">Blog</a></li>
                 </ul>
             </div>
             <div>
-                <h5 class="font-bold text-gray-900 mb-6 uppercase text-xs tracking-widest">Support</h5>
-                <ul class="space-y-3 text-sm">
-                    <li><a href="#" class="hover:text-indigo-600">Contact</a></li>
-                    <li><a href="#" class="hover:text-indigo-600">Privacy Policy</a></li>
-                    <li><a href="#" class="hover:text-indigo-600">Terms of Service</a></li>
+                <h4 class="font-bold mb-6">Vehicles</h4>
+                <ul class="text-gray-500 text-sm space-y-3">
+                    <li><a href="#" class="hover:text-black">Sedan</a></li>
+                    <li><a href="#" class="hover:text-black">Cabriolet</a></li>
+                    <li><a href="#" class="hover:text-black">Pickup</a></li>
+                    <li><a href="#" class="hover:text-black">SUV</a></li>
                 </ul>
             </div>
             <div>
-                <h5 class="font-bold text-gray-900 mb-6 uppercase text-xs tracking-widest">Download App</h5>
-                <div class="flex flex-col gap-2">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" class="h-8 w-fit" alt="App Store">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="h-8 w-fit" alt="Play Store">
+                <h4 class="font-bold mb-6">Download App</h4>
+                <div class="space-y-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" class="w-32 cursor-pointer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="w-32 cursor-pointer">
                 </div>
             </div>
+        </div>
+        <div class="border-t border-gray-100 pt-8 text-center text-xs text-gray-400">
+            © Copyright Car Rental 2024. Design by Figma.guru
         </div>
     </footer>
 
